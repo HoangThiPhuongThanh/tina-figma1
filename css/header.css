@@ -10,6 +10,9 @@
     width: 70px;
 }
 /* header__bottom */
+.header__logo{
+    line-height: 0;
+}
 .header__logo img{
     height: 40px;
 }

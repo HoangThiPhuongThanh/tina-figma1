@@ -14,12 +14,12 @@
 <body>
     <header>
         <div class="header__top">
-            <div class="ctnr">
+            <div class="ctnr ctnr-header">
                 <div class="p-relative">
-                    <p  class="text-align-center p__header tt-uppercase letter-spacing --color-white">
+                    <p  class="text-align-center p__header tt-uppercase letter-spacing color-white">
                         Free shipping in Italy
                     </p>
-                    <select name="" id="" class="select__header letter-spacing p-absolute border-0 bg-transparent top-0 right-0 --color-white">
+                    <select name="" id="" class="select__header letter-spacing p-absolute border-0 bg-transparent top-0 right-0 color-white">
                         <option value="">Italian</option>
                         <option value="">Italian</option>
                         <option value="">Italian</option>
@@ -29,10 +29,10 @@
             </div>
         </div>
         <div class="header__bottom p-relative">
-            <div class="ctnr ">
+            <div class="ctnr ctnr-header">
                 <div class="align-items-center d-flex jc-space-between">
                     <div class="header__logo">
-                        <a href="">
+                        <a href="index.html">
                             <img src="./image/logo.png" alt="">
                         </a>
                     </div>
@@ -41,25 +41,25 @@
                             <nav>
                                 <ul class ="menu__ul">
                                     <li class="letter-spacing">
-                                        <a href="#" class="menu__a tt-uppercase d-block">Shop</a>
+                                        <a href="collection.html" class="menu__a tt-uppercase d-block">Shop</a>
                                     </li>
                                     <li class="letter-spacing">
-                                        <a href="#" class="menu__a tt-uppercase d-block">Our History</a>
+                                        <a href="history.html" class="menu__a tt-uppercase d-block">Our History</a>
                                     </li>
                                     <li class="letter-spacing">
-                                        <a href="#" class="menu__a tt-uppercase d-block">JEWELERY PRODUCTION</a>
+                                        <a href="product.html" class="menu__a tt-uppercase d-block">JEWELERY PRODUCTION</a>
                                     </li>
                                     <li class="letter-spacing">
-                                        <a href="#" class="menu__a tt-uppercase d-block">BECOME A DEALER</a>
+                                        <a href="become.html" class="menu__a tt-uppercase d-block">BECOME A DEALER</a>
                                     </li>
                                     <li class="letter-spacing">
-                                        <a href="#" class="menu__a tt-uppercase d-block">CONTACT</a>
+                                        <a href="contact.html" class="menu__a tt-uppercase d-block">CONTACT</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
                     </div>
-                    <div class="header__icons d-flex align-items-center">
+                    <div class="header__icons d-flex align-items-end">
                         <div class="header__icon--share header__icon" >
                             <a href="#" onclick="event.preventDefault();" class="a-icon__header d-block">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,7 +89,7 @@
                             </a>
                         </div>
                         <div class="header__icon--menu header__icon" >
-                            <a href="" class="a-icon__header">
+                            <a href="" class="a-icon__header d-block">
                                 <svg class ="icon-close_menu" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.624984 1.37497H19.375C19.72 1.37497 19.9999 1.09495 19.9999 0.749984C19.9999 0.40497 19.7199 0.125 19.375 0.125H0.624984C0.280022 0.125 0 0.40497 0 0.749984C0 1.095 0.280022 1.37497 0.624984 1.37497Z" fill="#171719"/>
                                     <path d="M19.375 6.375H0.624984C0.27997 6.375 0 6.65502 0 6.99998C0 7.34493 0.280022 7.62495 0.624984 7.62495H19.375C19.72 7.62495 19.9999 7.34493 19.9999 6.99998C19.9999 6.65502 19.72 6.375 19.375 6.375Z" fill="#171719"/>
@@ -105,12 +105,22 @@
     </header>
     <main>
         <section id="banner" class="p-relative">
-            <div class="banner__img">
-                <img src="./image/baner.png " alt="" class="w-100 h-100 d-block img-slide">
+            <div class="slideshow-container p-relative">
+                <div class="banner__img mySlides fade">
+                    <img src="./image/baner.png " alt="" class="w-100 h-100 d-block img-slide">
+                </div>
+                <div class="banner__img mySlides fade">
+                    <img src="./image/bg-st.png " alt="" class="w-100 h-100 d-block img-slide">
+                </div>
+                <div class="banner__img mySlides fade">
+                    <img src="./image/baner.png" alt="" class="w-100 h-100 d-block img-slide">
+                </div>
+                <a class="prev p-absolute" onclick="plusSlides(-1)">❮</a>
+                <a class="next p-absolute" onclick="plusSlides(1)">❯</a>
             </div>
             <div class="banner__content p-absolute left-0 bottom-0 right-0">
                 <div class="ctnr">
-                    <h1 class =" h1 title --color-white banner__title">DecoRAZIONI PER LE FESTE</h1>
+                    <h1 class =" h1 title color-white banner__title">DecoRAZIONI PER LE FESTE</h1>
                     <button class = "btn btn-primary" type="">Shop now</button>
                 </div>
             </div>
@@ -118,7 +128,7 @@
         <section id="st1-home" class="shop">
             <div class="ctnr">
                 <div class="distance-shared">
-                    <h2 class ="h1 title title--color-black title-home--bottom text-align-center">Shop by category</h2>
+                    <h2 class ="h1 title color-black title-home--bottom text-align-center">Shop by category</h2>
                     <div class="row">
                         <div class="clm" style=" --w-lg:3; --w-xs:6;">
                             <div class="box border-0 p-relative distance-box">
@@ -126,7 +136,7 @@
                                     <img src="./image/sp1.png" alt="" class="item-img w-100 h-100 d-block">
                                 </div>
                                 <div class="box__content p-absolute text-align-center left-0 right-0 bottom-0">
-                                    <a class ="btn btn-primary d-inline-block shop__btn shop__btn--padding ">
+                                    <a href="collection.html" class ="btn btn-primary d-inline-block shop__btn shop__btn--padding ">
                                         RING
                                     </a>
                                 </div>
@@ -138,7 +148,7 @@
                                     <img src="./image/sp2.png" alt="" class="item-img w-100 h-100 d-block">
                                 </div>
                                 <div class="box__content p-absolute text-align-center left-0 right-0 bottom-0">
-                                    <a class ="btn btn-primary d-inline-block shop__btn shop__btn--padding ">
+                                    <a href="collection.html" class ="btn btn-primary d-inline-block shop__btn shop__btn--padding ">
                                         BRACELETS
                                     </a>
                                 </div>
@@ -150,7 +160,7 @@
                                     <img src="./image/sp3.png" alt="" class="item-img w-100 h-100 d-block">
                                 </div>
                                 <div class="box__content p-absolute text-align-center left-0 right-0 bottom-0">
-                                    <a class ="btn btn-primary d-inline-block shop__btn shop__btn--padding ">
+                                    <a href="collection.html" class ="btn btn-primary d-inline-block shop__btn shop__btn--padding ">
                                         EARINGS
                                     </a>
                                 </div>
@@ -162,7 +172,7 @@
                                     <img src="./image/sp4.png" alt="" class="item-img w-100 h-100 d-block">
                                 </div>
                                 <div class="box__content p-absolute text-align-center left-0 right-0 bottom-0">
-                                    <a class ="btn btn-primary d-inline-block shop__btn shop__btn--padding ">
+                                    <a href="collection.html" class ="btn btn-primary d-inline-block shop__btn shop__btn--padding ">
                                         NECKLACE
                                     </a>
                                 </div>
@@ -177,10 +187,12 @@
                 <div class="distance-shared">
                     <div class="box border-0 d-flex fw-wrap">
                         <div class="" style=" --w-lg:6; --w-xs:12;">
-                            <div class="box__video p-relative h-100">
-                                <img src="./image/img-video.png" alt="" class = "w-100 h-100">
-                                <div class="p-absolute right-0 left-0 bottom-0 top-0 d-flex align-items-center jc-center">
-                                    <button class=" btn video__btn bg-transparent d-flex align-items-center jc-center">
+                            <div class="box__video cl-video p-relative h-100">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/b-3yW_wCQVQ?start=41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <img src="./image/img-video.png" alt="" class = "w-100 h-100 click-video">
+                                
+                                <div class="btn-click-video  p-absolute right-0 left-0 bottom-0 top-0 d-flex align-items-center jc-center">
+                                    <button  onclick="event.preventDefault();"  class=" btn video__btn bg-transparent d-flex align-items-center jc-center">
                                         <svg class = "d-block" width="28" height="31" viewBox="0 0 28 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M27 13.7679C28.3333 14.5377 28.3333 16.4622 27 17.232L3.75 30.6554C2.41667 31.4252 0.749998 30.463 0.749999 28.9234L0.75 2.0766C0.75 0.537005 2.41667 -0.425246 3.75 0.344555L27 13.7679Z" fill="white"/>
                                         </svg>
@@ -190,7 +202,7 @@
                         </div>
                         <div class="" style=" --w-lg:6; --w-xs:12;">
                             <div class="box__content discover__content">
-                                <h2 class ="h1 title title--color-black mb-20">WE FOCUS ON WHAT’S REALLY IMPORTANT </h2>
+                                <h2 class ="h1 title color-black mb-20">WE FOCUS ON WHAT’S REALLY IMPORTANT </h2>
                                 <p class="mb-70">Lorem ipsum dolor sit amet, 
                                     consectetur adipiscing elit, 
                                     sed do eiusmod tempor incididunt ut labore et 
@@ -198,9 +210,9 @@
                                     consectetur adipiscing elit, 
                                     sed do eiusmod tempor consecte
                                 </p>
-                                <button class ="btn btn-primary">
+                                <a  href="history.html" class ="btn btn-primary">
                                     DISCOVER THE STORY
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -242,7 +254,7 @@
                             <div class="clm" style=" --w-lg:3; --w-xs:6;">
                                 <div class="box border-0 distance-box">
                                     <div class="box__img p-relative">
-                                        <a href="" class = "d-block">
+                                        <a href="product-detail.html" class = "d-block">
                                             <img src="./image/sp5.png" alt="" class="w-100 h-100">
                                         </a>
                                         <button href="" class="product__icon bg-transparent border-0 p-absolute top-0 right-0 d-block">
@@ -266,7 +278,7 @@
                             <div class="clm" style=" --w-lg:3; --w-xs:6;">
                                 <div class="box border-0 distance-box">
                                     <div class="box__img p-relative">
-                                        <a href="" class = "d-block">
+                                        <a href="product-detail.html" class = "d-block">
                                             <img src="./image/sp5.png" alt="" class="w-100 h-100">
                                         </a>
                                         <button href="" class="product__icon bg-transparent border-0 p-absolute top-0 right-0 d-block">
@@ -290,7 +302,7 @@
                             <div class="clm" style=" --w-lg:3; --w-xs:6;">
                                 <div class="box border-0 distance-box">
                                     <div class="box__img p-relative">
-                                        <a href="" class = "d-block">
+                                        <a  href="collection.html" class = "d-block">
                                             <img src="./image/sp5.png" alt="" class="w-100 h-100">
                                         </a>
                                         <button href="" class="product__icon bg-transparent border-0 p-absolute top-0 right-0 d-block">
@@ -318,12 +330,12 @@
         </section>
         <section id="st4-home" class="collection" style="background: url(./image/bg-st.png);">
             <div class="ctnr w-100">
-                <h2 class ="h3 title --color-white mb-20 ">New COLLECTION 2021</h2>
+                <h2 class ="h3 title color-white mb-20 ">New COLLECTION 2021</h2>
                 <p class="collection__p--with">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididu
                 </p>
-                <a href="" class="btn btn-link --color-white d-inline-block  mt-30">
+                <a href="collection.html" class="btn btn-link color-white d-inline-block  mt-30">
                     See more 
                     <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L6 5.22449L1 10" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -334,7 +346,7 @@
         <section id="st3-home" class="services">
             <div class="ctnr">
                 <div class="distance-shared">
-                    <h2 class ="h1 title title--color-black title-home--bottom text-align-center">OUR SERVICES</h2>
+                    <h2 class ="h1 title color-black title-home--bottom text-align-center">OUR SERVICES</h2>
                     <div class="row">
                         <div class="clm" style=" --w-lg:3; --w-md:6; --w-xs:12;">
                             <div class="box services__box distance-box text-align-center">
@@ -420,10 +432,16 @@
                 </div>
             </div>
         </section>
+        <section class="modal-video">
+            <div class="cl-video close-video">X</div>
+            <div class="modal-content">
+
+            </div>
+        </section>
     </main>
 
     <footer>
-        <div class="footer --bg-black">
+        <div class="footer bg-black">
             <div class="ctnr">
                 <div class="logo__footer text-align-center">
                     <a href="">
@@ -435,7 +453,7 @@
                         <div class="clm" style ="--w-lg:3; --w-md: 6; --w-sm: 12; --w-xs: 12;">
                             <div class="box border-0 bg-transparent">
                                 <div class ="title_footer">
-                                    <h5 class ="h5 title fw-400 --color-white footer__title">Customer Care</h5>
+                                    <h5 class ="h5 title fw-400 color-white footer__title">Customer Care</h5>
                                 </div>
                                 <div class = "content">
                                     <ul class="footer__list-menu">
@@ -452,7 +470,7 @@
                         <div class="clm" style ="--w-lg:3; --w-md: 6; --w-sm: 12; --w-xs: 12;">
                             <div class="box border-0 bg-transparent">
                                 <div class ="title_footer">
-                                    <h5 class ="h5 title fw-400 --color-white footer__title">Legal information:</h5>
+                                    <h5 class ="h5 title fw-400 color-white footer__title">Legal information:</h5>
                                 </div>
                                 <div class = "content">
                                     <ul class="footer__list-menu">
@@ -476,7 +494,7 @@
                         <div class="clm" style ="--w-lg:3; --w-md: 6; --w-sm: 12; --w-xs: 12;">
                             <div class="box border-0 bg-transparent">
                                 <div class ="title_footer">
-                                    <h5 class ="h5 title fw-400 --color-white footer__title">LEGAL Terms:</h5>
+                                    <h5 class ="h5 title fw-400 color-white footer__title">LEGAL Terms:</h5>
                                 </div>
                                 <div class = "content">
                                     <ul class="footer__list-menu">
@@ -499,17 +517,17 @@
                         <div class="clm" style ="--w-lg:3; --w-md: 6; --w-sm: 12; --w-xs: 12;">
                             <div class="box border-0 bg-transparent">
                                 <div class="form content">
-                                    <h5 class ="h5 title fw-400 --color-white footer__title">SUBSCRIBE For Newsletter</h5>
+                                    <h5 class ="h5 title fw-400 color-white footer__title">SUBSCRIBE For Newsletter</h5>
                                     <form action="" class="footer__form p-relative"> 
                                         <div class="form-group">
                                             <input id="fullname" name="fullname" type="text" placeholder="Your Email" class="footer__input border-0 form-control bg-transparent">
                                             <span class="form-message"></span>
                                         </div>
-                                        <button type="submit" onclick="event.preventDefault();" class ="footer__btn --color-white bg-transparent border-0 p-absolute top-0 right-0 bottom-0">Subscribe</button>
+                                        <button type="submit" onclick="event.preventDefault();" class ="footer__btn color-white bg-transparent border-0 p-absolute top-0 right-0 bottom-0">Subscribe</button>
                                     </form>
                                 </div>
                                 <div class ="information__icon">
-                                    <h5 class ="h5 title fw-400 --color-white footer__title">SOCial</h5>
+                                    <h5 class ="h5 title fw-400 color-white footer__title">SOCial</h5>
                                     <div class = "content">
                                         <ul class="d-flex">
                                             <li>
