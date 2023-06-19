@@ -1,23 +1,25 @@
 /*---------- title -----------*/
 h1, .h1{
     font-size: var(--heading-1);
-    line-height: 1.5em;
 }
 h2, .h2{
     font-size: var(--heading-2);
-    line-height: 1.5em;
 }
 h3, .h3{
     font-size: var(--heading-3);
-    line-height: 1.5em;
 }
 h4, .h4{
-    line-height: 1.5em;
     font-size: var(--heading-4);
 }
 h5, .h5{
     line-height: 1.7em;
     font-size: var(--heading-5);
+}
+.line-height-15em{
+    line-height: 1.5em;
+}
+.scroll-snap-align-start{
+    scroll-snap-align: start;
 }
 .title{
     text-transform: uppercase;
@@ -70,7 +72,7 @@ p{
     scrollbar-width: none;
     overflow-x: auto;
 }
-.scroll-x .row{
+.scroll-x.row{
     flex-wrap: nowrap !important;
 }
 .scroll-x::-webkit-scrollbar {
