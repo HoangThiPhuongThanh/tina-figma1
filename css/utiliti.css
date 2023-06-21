@@ -27,6 +27,8 @@
     --tt--color-text--danger:#84848E;
     --tt--color-text--price:#555562;
     --tt--font-family--l:'Lato', sans-serif;
+    --tt--container: 100%;
+    --tt--container--secondary: 100%;
 }
 html{
     font-size: 10px;
@@ -71,6 +73,9 @@ img{
 }
 .jc-center{
     justify-content: center;
+}
+.jc-right{
+    justify-content: right;
 }
 .jc-space-between{
     justify-content: space-between;
@@ -127,7 +132,13 @@ img{
 
 /* ----- column ----- */
 .ctnr{
-    max-width: 100%;
+    max-width: var(--tt--container);
+    padding-inline: 15px;
+    margin: 0 auto;
+    width: auto;
+}
+.ctnr-secondary{
+    max-width: var( --tt--container--secondary);
     padding-inline: 15px;
     margin: 0 auto;
     width: auto;
@@ -147,18 +158,19 @@ img{
     max-width: calc(100%/12 * var(--w-xs));
 }
 @media (min-width: 576px){
+    :root{
+        --tt--container: 540px;
+    }
     [style*="--w-sm"] {
         width: calc((100%/12) * var(--w-sm));
         max-width: calc((100%/12) * var(--w-sm));
-    }
-    .ctnr{
-        max-width: 540px; 
     }
 }
 @media (min-width: 768px){
     :root{
         --heading-1: 3rem;
         --tt-font-size--danger: 22px;
+        --tt--container: 720px;
     }
     .row{
         margin:0px -10px;
@@ -169,28 +181,25 @@ img{
     [style*="--w-md"] {
         width: calc((100%/12) * var(--w-md));
         max-width: calc((100%/12) * var(--w-md));
-    }
-    .ctnr{
-        max-width: 720px; 
-    }
-    
+    } 
 }
 @media (min-width: 992px){
+    :root{
+        --tt--container: 960px;
+    }
     [style*="--w-lg"] {
         width: calc((100%/12) * var(--w-lg));
         max-width: calc((100%/12) * var(--w-lg));
     }
-    .ctnr{
-        max-width: 960px; 
-    }
 }
 @media (min-width: 1200px){
+    :root{
+        --tt--container: 1183px;
+        --tt--container--secondary: 980px;
+    }
     [style*="--w-xl"] {
         width: calc((100%/12) * var(--w-xl));
         max-width: calc((100%/12) * var(--w-xl));
-    }
-    .ctnr{
-        max-width: 1183px;
     }
 }
 /* ----- end column ----- */

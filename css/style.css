@@ -739,7 +739,7 @@ blockquote{
     box-shadow: inset 0px 0px 0px #ABAAB3;
 }
 .tabcontent__right img{
-    height: 213px;
+    max-height: 213px;
     width: 100%;
 }
 

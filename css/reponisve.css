@@ -229,8 +229,8 @@
         height: 160px;
     }
     .tabcontent__right img{
-        width: 86%;
-        height: 310px;
+        max-width: 86%;
+        max-height: 310px;
     }
 }
 @media(min-width: 992px) {
@@ -284,10 +284,7 @@
 /* end shared */
 
 /* -------- history -------- */
-    #stt1-history .ctnr{
-        margin: 0 auto;
-        width: 980px;
-    }
+ 
     .order:nth-child(2n){
         padding-block: 100px;
     }
@@ -304,10 +301,6 @@
     }
 /* -------- end history -------- */
 /* -------- become -------- */
-    #register .ctnr{
-        width: 980px;
-        margin: 0 auto;
-    }
     .register__form{
         padding-top: 100px;
     }
