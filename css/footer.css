@@ -14,7 +14,7 @@
 }
 .footer__menu-item,
 .footer__menu-link{
-    color:var(--tt--color-text--secondary) ;
+    color:var(--color-text--secondary) ;
 }
 .footer__form{
     background-color: #262628;
@@ -24,10 +24,10 @@
     height: 24px;
 }
 .footer__input::placeholder{
-    color:var(--tt--color-text--danger) ;
+    color:var(--color-text--danger) ;
 }
 .footer__btn {
-    font-size: var(--tt-font-size--secondary);
+    font-size: var(--font-size--secondary);
     right: 10px !important;
 }
 .footer__input:focus-visible,
@@ -61,5 +61,5 @@
 .footer_coppy-right{
     padding-bottom: 23px;
     padding-top: calc(23px - 7px);
-    color:var(--tt--color-text--secondary) ;
+    color:var(--color-text--secondary) ;
 }

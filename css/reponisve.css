@@ -234,7 +234,9 @@
     }
 }
 @media(min-width: 992px) {
-   
+   .p__header{
+        text-align: center;
+   }
 }
 @media(min-width: 1200px) {
     .product-detail__content{
@@ -271,7 +273,7 @@
         position: static;
         transform: translateY(0px);
         width: auto;
-        border-top: 0px dotted var(--tt--bg--secondary--2);
+        border-top: 0px dotted var(--bg--secondary--2);
         padding:0px;
     }   
 /* ----- end header ----- */
@@ -320,5 +322,9 @@
     }
     .tabs__button--jc-left{
         justify-content: left;
+    }
+
+    .buttons_added{
+        max-width: 150px;
     }
 }

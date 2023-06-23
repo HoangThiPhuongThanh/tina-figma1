@@ -1,6 +1,6 @@
 /* header__top */
 .header__top{
-    background-color:var(--tt--color-text--primary);
+    background-color:var(--color-text--primary);
     padding: 16px 0px;
 }
 .p__header{
@@ -36,10 +36,10 @@
     left: 0;
     z-index: 99;
     padding: 0;
-    background-color: var(--tt--bg--secondary);
+    background-color: var(--bg--secondary);
     width: 100%;
     padding: 15px 0px;
-    border-top: 2px dotted var(--tt--bg--danger);
+    border-top: 2px dotted var(--bg--danger);
     transform: translateY(400px);
     transition: all ease-in-out .5s;
 }

@@ -27,37 +27,41 @@ h5, .h5{
 }
 .btn{
     font-weight: 400;
-    font-size: var(--tt-font-size--secondary);
+    font-size: var(--font-size--secondary);
     line-height: 24px;
-    color: var(--tt--color-text--primary);
+    color: var(--color-text--primary);
     padding: 12px 32px;
     letter-spacing: 2px;
     text-transform: uppercase;
     border: 0;
     background-color: transparent;
     cursor: pointer;
+    font-family: var(---font-family--l);
 }
 .btn-primary{
-    background-color: var( --tt--bg--secondary);
+    background-color: var( --bg--secondary);
 }
 .btn-secondary{
-    border: 1px solid var(--tt--color-text--primary);   
+    border: 1px solid var(--color-text--primary);   
 }
 .btn-link{
     padding: 0px;
 }
 .btn-dark{
-    background-color: var(--tt--bg--primary);
-    color: var(--tt--color-text--success);
+    background-color: var(--bg--primary);
+    color: var(--color-text--success);
 }
 p{
-    color: var(--tt--color-text--danger);
+    color: var(--color-text--danger);
     line-height: 1.7em;
-    font-size: var( --tt-font-size--secondary);
+    font-size: var( --font-size--secondary);
+}
+input, textarea, option, select{
+    font-family: var(--font-family--l);
 }
 .box{
-    background-color: var(--tt--bg--secondary);
-    border: 1px solid var(--tt--bg--danger);
+    background-color: var(--bg--secondary);
+    border: 1px solid var(--bg--danger);
     box-sizing: border-box;
 }
 .distance-shared{
@@ -80,20 +84,20 @@ p{
     background: transparent;
 }
 .price{
-    color: var( --tt--color-text--price);
+    color: var( --color-text--price);
     line-height: 24px;
 }
 .color-white{
-    color: var(--tt--bg--secondary);
+    color: var(--bg--secondary);
 }
 .color-black{
-    color: var(--tt--bg--primary);
+    color: var(--bg--primary);
 }
 .bg-white{
-    background-color: var(--tt--bg--secondary);
+    background-color: var(--bg--secondary);
 }
 .bg-black{
-    background-color: var(--tt--bg--primary);
+    background-color: var(--bg--primary);
 }
 .mb-5{
     margin-bottom: 5px;
@@ -168,7 +172,7 @@ p{
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: var( --tt--color-text--success);
+    color: var( --color-text--success);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -207,12 +211,12 @@ p{
 
 /* st2-home */
 #st2-home .box{
-    background-color: var( --tt--bg--success);
+    background-color: var( --bg--success);
 }
 .video__btn{
     width: 27px;
     height: 27px;
-    border: 1px solid var(--tt--bg--secondary);
+    border: 1px solid var(--bg--secondary);
     border-radius: 100%;
     padding: 0;
 }
@@ -243,7 +247,7 @@ p{
 }
 /* section-home_6 */
 .services{
-    background-color: var(--tt--bg--success);
+    background-color: var(--bg--success);
 }
 .services__box svg{
     height: 40px;
@@ -254,14 +258,14 @@ p{
     height: 9px;
 }
 .services__box{
-    background-color: var(--tt--bg--secondary);
+    background-color: var(--bg--secondary);
     padding: 50px 20px;
 }
 /* -------- end homepage -------- */
 
 /* -------- history -------- */
 .banner-inside-page{
-    background-color: var(--tt--bg--success);
+    background-color: var(--bg--success);
     padding: 56px 0px;
 }
 /* stt1-history */
@@ -273,7 +277,7 @@ p{
 }
 /* stt2-history */
 #stt2-history{
-    background-color: var(--tt--bg--success);
+    background-color: var(--bg--success);
 }
 .stt2-history__content{
     padding-top: 30px;
@@ -303,7 +307,7 @@ p{
 .register__form .form-control{
     padding: 18px 24px;
     height: 60px;
-    border: 1px solid var(--tt--bg--danger);
+    border: 1px solid var(--bg--danger);
     box-sizing: border-box;
 }
 .register__form textarea.form-control{
@@ -324,7 +328,7 @@ p{
     margin-right: 24px;
 }
 .form-group input::placeholder, .form-group textarea::placeholder{
-    color: var( --tt--color-text--secondary);
+    color: var( --color-text--secondary);
 }
 /* -------- end become -------- */
 
@@ -341,9 +345,9 @@ p{
     border: none;
     outline: none;
     cursor: pointer;
-    font-size:var(--tt-font-size--danger);
+    font-size:var(--font-size--danger);
     transition: 0.2s ease;
-    color: var(--tt--color-text--secondary);
+    color: var(--color-text--secondary);
     margin-right: 40px;
     padding: 10px;
     transition: all ease .3s;
@@ -358,7 +362,7 @@ p{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--tt--bg--primary);
+    background-color: var(--bg--primary);
     transform: translateX(-100%);
 }
 .tab__btn.active::after{
@@ -371,10 +375,10 @@ p{
     margin-right: 0px;
 }
 .tab__btn:hover{
-    color: var(--tt--text--primary);
+    color: var(--text--primary);
 }
 .tab__btn.active {
-    color: var(--tt--text--primary)
+    color: var(--text--primary)
 }
 .tabcontent-title{
     padding: 40px 30px 40px 0px;
@@ -405,7 +409,7 @@ p{
     transform: translateX(0%);
 }
 .desc-shared--black{
-    color: var(--tt--color-text--primary);
+    color: var(--color-text--primary);
 }
 .desc-shared--lheight-40{
     line-height: 40px;
@@ -488,7 +492,7 @@ p{
 .clean-tool__content{
     padding: 60px 30px 90px 30px;
     box-sizing: border-box;
-    background-color: var(--tt--bg--success);
+    background-color: var(--bg--success);
     order: 2;
 }
 .clean-tool__img{
@@ -539,7 +543,7 @@ p{
     height: 5px;
     width: 5px;
     border-radius: 100%;
-    background-color: var( --tt--bg--warning);
+    background-color: var( --bg--warning);
     top: 50%;
     transform: translate(-50%, -50%);
 }
@@ -547,9 +551,9 @@ p{
     content: none;
 }
 .breadcrumb__a{
-    font-size: var( --tt-font-size--warning);
+    font-size: var( --font-size--warning);
     line-height: 24px;
-    color: var(--tt--color-text--1);
+    color: var(--color-text--1);
     font-weight: 400;
     padding-inline: 15px;
 }
@@ -557,10 +561,10 @@ p{
     padding-left: 0px;
 }
 .breadcrumb__a.active{
-    color: var(--tt--color-text--primary);
+    color: var(--color-text--primary);
 }
 .product-detail{
-    box-shadow: 0px -1px 0px var(--tt--bg--danger);
+    box-shadow: 0px -1px 0px var(--bg--danger);
 }
 .product-detail__image-primarykey img{
     height: 399.72px;
@@ -568,7 +572,7 @@ p{
 .product-detail__list-images button{
     height: 48px;
     width: 48px;
-    border-color: var(--tt--bg--secondary);
+    border-color: var(--bg--secondary);
     border-radius: 100%;
     padding: 0;
 }
@@ -589,15 +593,17 @@ p{
     display:inline-flex;
     white-space:nowrap;
     vertical-align:top;
-    border: 1px solid var(--tt--bg--danger);
+    border: 1px solid var(--bg--danger);
+    max-width: 100%;
+    width: 100%;
 }
 .is-form {
     overflow: hidden;
     height: 50px;
     width: 50px;
     padding: 0;
-    text-shadow: 1px 1px 1px var( --tt--bg--secondary);
-    font-size: var(--tt-font-size--success);
+    text-shadow: 1px 1px 1px var( --bg--secondary);
+    font-size: var(--font-size--success);
 }
 
 .is-form:focus,.input-text:focus {
@@ -605,7 +611,7 @@ p{
     border: 0;
 }
 .input-qty {
-    background-color: var( --tt--bg--primary--2);
+    background-color: var( --bg--primary--2);
     height: 50px;
     font-size: 1rem;
     display: inline-block;
@@ -620,22 +626,22 @@ p{
 }
 .product-detail__label-right{
     font-weight: 600;
-    font-size: var( --tt-font-size--success);
+    font-size: var( --font-size--success);
     line-height: 19px;
-    color: var(--tt--color-text--primary);
+    color: var(--color-text--primary);
 }
 .product-detail__label-left{
     font-weight: 400;
     line-height: 24px;
-    color: var( --tt--color-text--danger);
+    color: var( --color-text--danger);
 }
 .product-detail__label-left svg{
     margin-right: 10px;
 }
 .product-detail__select{
     height: 50px;
-    background: var( --tt--bg--secondary);
-    border: 1px solid var(--tt--bg--danger);
+    background: var( --bg--secondary);
+    border: 1px solid var(--bg--danger);
     padding: 11px 20px;
     position: relative;
 }
@@ -650,7 +656,8 @@ p{
     border-color: #fff transparent transparent transparent;
 }
 .product-detail__btnaddcart--padding{
-    padding: 13px 79px;
+    padding: 13px 78px;
+    margin-left: 15px;
 }
 .product-detail__btnaddcart--border,
 .product-detail__btnheart--border{
@@ -662,9 +669,11 @@ p{
 }
 .product-detail__btnheart--padding{
     padding: 15px 16px;
+    max-width: 50px;
+    margin-left: 15px;
 }
 .product-detail__btnbuynow--bg{
-    background-color: var(--tt--bg--primary);
+    background-color: var(--bg--primary);
 }
 blockquote{
     background: #F5F5F5;
@@ -701,7 +710,7 @@ blockquote{
 
 .tab__btn--padding{
     padding: 27px 0px;
-    font-size: var( --tt-font-size--success);
+    font-size: var( --font-size--success);
 }
 .product-detail-tab__btn{
     box-shadow: inset 0px -1px 0px #ECECEC;
@@ -710,9 +719,9 @@ blockquote{
     height: 1px;
 }
 .product-detail-tabcontent__p{
-    color: var(--tt--color-text--primary);
+    color: var(--color-text--primary);
     font-weight: 600;
-    font-size: var( --tt--font-size--md-large--24);
+    font-size: var( ---font-size--md-large--24);
     margin-bottom: 35px;
 }
 .product-detail-tabcontent__ul{
@@ -722,7 +731,7 @@ blockquote{
     margin-left: 15px;
     font-weight: 400;
     line-height: 24px;
-    color: var( --tt--color-text--danger);
+    color: var( --color-text--danger);
     list-style: disc;
     margin-bottom: 15px;
 }
@@ -750,13 +759,13 @@ blockquote{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color:var(--tt--bg--opacity);
+    background-color:var(--bg--opacity);
     display: none;
     opacity: 1;
 
 }
 .modal-content{
-    background-color: var(--tt--bg--secondary);
+    background-color: var(--bg--secondary);
     margin: auto;
     padding: 10px;
     width: 50%;
@@ -771,11 +780,11 @@ blockquote{
 }
 .close-video{
     position: absolute;
-    color: var(--tt--color-text--success);
+    color: var(--color-text--success);
     font-size: 15px;
     height: 30px;
     width: 30px;
-    background-color: var(--tt--bg--primary);
+    background-color: var(--bg--primary);
     display: flex;
     justify-content: center;
     align-items: center;
